@@ -1,0 +1,230 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+    google.load("jquery", "1.3.2");
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" media="screen" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+
+<html lang="en">
+
+<head>
+    <title>Pixel-GRM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+
+    <style>
+        .new-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 75px;
+        }
+
+        .new-container2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 30px;
+        }
+
+        .new-container3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 106px;
+        }
+
+        .new-container4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 60px;
+        }
+
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <!-- <script src="assets/js/video_comparison.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer@2.0.1/dist/model-viewer.min.js"></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="title" display="block">
+            <b>
+                Pixel-GRM: Pixel-aligned Gaussian Reconstruction Model for 3D Reconstruction and Generation
+            </b>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="center-container">
+        <a href="./index.html" class="btn btn-primary btn-lg btn-search" style="color: white">Home Page</a>
+    </div>
+
+    <hr>
+
+    <h1>Additional Image/Text to 3D Results</h1>
+    <div class="new-container">
+        <table width="1200" class="center">
+            <tr>
+
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/duola_yt_merge.mp4"
+                        style="width: 95%; height: auto;"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/dino_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/dog_police_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/green_duck_merge.mp4"
+                        style="width: 95%; height: auto;"></video></td>
+            </tr>
+            <tr>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/girl_merge.mp4"
+                        style="width: 95%; height: auto;"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/man_merge.mp4"
+                        style="width: 95%; height: auto;"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/mj_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/3-97-2_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+            </tr>
+            <tr>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/deadman_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/curry_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/cowgirl_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/frog_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+            </tr>
+            <tr>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/cat1_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/green_doll_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/backpack_bunny_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/gweilo_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+            </tr>
+            <tr>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/santa_claus_head_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/red_christmas_hat_merge.mp4"
+                        style="width: 95%; height: auto;"></video></td>
+
+
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/alien_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/polar_bear_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+            </tr>
+            <tr>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/monkey_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/muscle_dog_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/golden_robot_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/Einstein_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+            </tr>
+            <tr>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/hammer_merge.mp4"
+                        style="width: 95%; height: auto;"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/helmet_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/hulk_yt_merge.mp4"
+                        style="width: 95%; height: auto;"></video></td>
+                <td><video muted autoplay="autoplay" loop="loop" src="./i23d/lego_strongman_merge.mp4"
+                        style="width: 95%; height: auto"></video></td>
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;">
+                    <video muted autoplay="autoplay" loop="loop"
+                        src="./t23d/Chibi_Deadpool,_pixar_style,_modern_Disney_style,_8K,_studio_light,_cinematic,_hyperrealistic,_octane_render_merge.mp4"
+                        style="width: 95%; height: auto;">
+                    </video>
+                    <br>
+                    Chibi Deadpool, pixar style
+                    <br>
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <video muted autoplay="autoplay" loop="loop"
+                        src="./t23d/a_humanoid_robot_holding_a_human_brain_merge.mp4" style="width: 95%; height: auto;">
+                    </video>
+                    <br>
+                    A humanoid robot holding a human brain
+                    <br>
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <video muted autoplay="autoplay" loop="loop" src="./t23d/ironman_helmet_merge.mp4"
+                        style="width: 95%; height: auto;">
+                    </video>
+                    <br>
+                    Ironman's helmet, 4K, HD
+                    <br>
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <video muted autoplay="autoplay" loop="loop"
+                        src="./t23d/a_delicious_chocolate_brownie_dessert_with_ice_cream_on_the_side_merge.mp4"
+                        style="width: 95%; height: auto;">
+                    </video>
+                    <br>
+                    A chocolate brownie with ice cream
+                    <br>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+
+    <br><br>
+
+    <hr class="divider" />
+    <div class="container" style="max-width: 768px;">
+        <footer>
+            <p> Website template from <a href="https://dreamfusion3d.github.io/">DreamFusion</a> and <a
+                    href="https://mv-dream.github.io/">MVDream</a>. We thank the authors for the open-source code.</p>
+        </footer>
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.js?features=IntersectionObserver"></script>
+    <script src="assets/js/yall.js"></script>
+    <script>
+        yall(
+            {
+                observeChanges: true
+            }
+        );
+    </script>
+
+    <script src="https://polyfill.io/v3/polyfill.js?features=IntersectionObserver"></script>
+    <script src="assets/js/yall.js"></script>
+    <script>
+        yall(
+            {
+                observeChanges: true
+            }
+        );
+    </script>
+</body>
+
+</html>
